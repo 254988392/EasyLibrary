@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.tyky.easyutil.EasyDialog;
 import com.tyky.easyutil.EasyToast;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EasyToast.show(this,"EasyLibrary!!!");
+        EasyToast.show(this, "remote EasyLibrary!!!");
+        EasyDialog.showDialog(this);
     }
 }
